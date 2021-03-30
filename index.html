@@ -6,16 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mihail Prohorov Frontend Developer</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css ">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
 <header class="header-holder">
     <div class="header-info">
         <div class="container">
-            <div class="header-image-holder">
-                <img src="images/mypic-3.jpg" alt="">
-            </div>
+            <div class="header-image-holder"></div>
+            
             <h1>
                 <span class="heading-top">Creattive Front-End Developer</span>
                 <span>offering 7+ years experience in developing and testing multiple web-based applications</span>
@@ -28,7 +28,7 @@
 <main class="content">
     <section class="jobs-info">
         <div class="container">
-            <h2>Employment history</h2>
+            <h2><i class="fas fa-history"></i> Employment history</h2>
 
             <ul class="jobs">
                 <li>
@@ -78,18 +78,40 @@
 
     <section class="education">
         <div class="container">
-            <h3 class="h2">Education</h3>
-            <p>Master, Plovdiv university Paisii Hilendarski, Plovdiv</p>
+            <h3 class="h2"><i class="fas fa-university"></i> Education</h3>
+            <p>Master degree software technologies, university of Plovdiv  Paisii Hilendarski</p>
         </div>
     </section>
 
     <section class="skills">
         <div class="container">
-            <h4 class="h2">Skills</h4>
-            <p>HTML, CSS, SASS, LESS, JavaScript, AJAX, React JS, GIT, NodeJs, basic PHP and MySql</p>
+            <h4 class="h2"><i class="fas fa-laptop-code"></i> Skills</h4>
+            <ul class="skills-list">
+                <li><i class="fab fa-html5"></i>HTML</li>
+                <li><i class="fab fa-css3"></i>CSS</li>
+                <li><i class="fab fa-sass"></i>SASS</li>
+                <li><i class="fab fa-less"></i>LESS</li>
+                <li><i class="fab fa-js-square"></i>JavaScript</li>
+                <li><i class="fab fa-react"></i>React JS</li>
+                <li><i class="fab fa-git"></i>GIT</li>
+                <li><i class="fab fa-node-js"></i>NodeJs</li>
+                <li> <i class="fab fa-php"></i> (basic) PHP and </li>
+                <li><i class="fas fa-database"></i> (basic) MySql</li>
+            </ul>
         </div>
     </section>
 </main>
-    
+
+<footer class="footer-holder">
+    <div class="container">
+        <ul class="social-links">
+            <li><a href="https://www.linkedin.com/in/mihail-prohorov-76869041/"><i class="fab fa-linkedin-in"></i> LinkedIn</a></li>
+            <li><a href="https://github.com/mwxood"><i class="fab fa-github"></i> Github</a></li>
+        </ul>
+        <p class="copyright">&copy; <span class="date"></span> mprohorov.com All rights reserved</p>
+    </div>
+</footer>
+
+<script src="scripts/script.js"></script>
 </body>
 </html>
