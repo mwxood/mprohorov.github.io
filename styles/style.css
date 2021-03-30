@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header-holder {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 60px;
+}
+
+h1 .heading-top {
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 5rem;
+}
+
+h1 span {
+    font-size: 1.5rem;
+    display: block;
+    font-weight: 300;
+}
+
+.contacts-info {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+    list-style: none;
+    width: 100%;
+}
+
+.contacts-info li {
+    margin-right: 10px;
+}
+
+.contacts-info li:last-child {
+    margin-right: 0;
+}
+
+.header-image-holder {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.jobs-info {
+    background: #1abc9c;
+    color: #fff;
+}
+
+.jobs-info, .education {
+    padding: 60px 0;
+}
+
+.jobs {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+    max-width: 800px;
+    margin: auto;
+}
+
+.jobs li {
+    width: 45%;
+    padding: 20px 0;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.jobs span {
+    display: block;
+    width: 100%;
+}
+
+.job-title {font-weight: 400; margin-bottom: 20px;}
+.job-position, .job-desc {font-weight: 300; margin: 10px 0;}
