@@ -11,15 +11,22 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+<div class="overlay"></div>
 <header class="header-holder">
+    <span class="switch-mode">
+        <i class="fas fa-moon"></i>
+    </span>
     <div class="header-info">
         <div class="container">
             <div class="header-image-holder"></div>
             
             <h1>
-                <span class="heading-top">Creative Front-End Developer</span>
+                <span class="heading-top"><span class="name">Mihail Prohorov</span>  Creative Front-End Developer</span>
                 <span>offering 7+ years experience in developing and testing multiple web-based applications</span>
+                <a href="#" class="contact-btn">Contact</a>
             </h1>
+
+            
 
         </div><!-- container-->
     </div><!--end header-info-->
@@ -111,6 +118,17 @@
         <p class="copyright">&copy; <span class="date"></span> mprohorov.com All rights reserved</p>
     </div>
 </footer>
+
+<div class="modal">
+    <span class="close"><i class="fas fa-times"></i></span>
+    <div class="modal-heading">Contact Info</div>
+    <div class="contact-body">
+        <ul class="contact-list">
+            <li><i class="far fa-envelope"></i> mwxood[at]gmail.com<li>
+            <li><i class="fas fa-mobile-alt"></i> +359899 93 75 53</li>
+        </ul>
+    </div>
+</div>
 
 <script src="scripts/script.js"></script>
 </body>
