@@ -141,10 +141,11 @@
         display: block;
         height: 15px;
         position: absolute;
-        top: 4px; left: 0;
+        top: 0;
+        left: 50%;
         width: 15px;
-        transition: background 0.3s ease-in-out,
-                border 0.3s ease-in-out;
+        transition: background .3s ease-in-out,border .3s ease-in-out;
+        transform: translateX(-50%);
     }
     &:after {
         content: "";
