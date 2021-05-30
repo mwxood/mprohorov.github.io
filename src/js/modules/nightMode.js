@@ -6,7 +6,6 @@ const nightMode = () => {
             document.body.classList.add ('dark-theme');
             switchMode.children[0].classList.remove('fa-moon');
             switchMode.children[0].classList.add('fa-sun');
-            console.log('dasdasd')
     
         } else {
             document.body.classList.remove ('dark-theme');
