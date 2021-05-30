@@ -41,6 +41,15 @@
   }
 }
 
+.container {
+  max-width: 1140px;
+  margin: auto;
+}
+
+.mb-5, .my-5 {
+  margin-bottom: 3rem !important;
+}
+
 .flex-container {display: flex;}
 .horizontal-center {justify-content: center;}
 .vertical-center {align-items: center;}

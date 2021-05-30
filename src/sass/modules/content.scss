@@ -1,7 +1,4 @@
 .about-section {
-    margin-bottom: 100px;
-   
-
     .social {
         list-style: none;
         @extend .flex-container; 
@@ -10,6 +7,14 @@
         width: 100%;
         li {
             margin-right: 10px;
+        }
+    }
+
+    a {
+        color: $primary-color;
+        transition: all .3s ease;
+        &:hover {
+            color: $secondary-color;
         }
     }
 
