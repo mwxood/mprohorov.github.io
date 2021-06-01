@@ -2,7 +2,7 @@
     background: url('../img/banner.jpg') no-repeat center 100%;
     background-attachment: fixed;
     background-size: cover;
-    min-height: 700px;
+    min-height: 900px;
     position: relative;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 60% 100%, 0 80%);
     clip-path: polygon(0 0, 100% 0, 100% 80%, 60% 100%, 0 80%);
@@ -78,6 +78,7 @@
 @media (max-width: 527px) {
     .header-bg {
         min-height: 200px;
+        background-position: 0 -223px;
     }
     .header-bg .about-info h1 {
         font-size: 35px;
