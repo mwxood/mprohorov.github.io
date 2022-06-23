@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "//mprohorov.com/static/css/main.376379ee.css",
-    "main.js": "//mprohorov.com/static/js/main.b82615cb.js",
-    "static/js/787.a71561b8.chunk.js": "//mprohorov.com/static/js/787.a71561b8.chunk.js",
-    "static/media/banner.jpg": "//mprohorov.com/static/media/banner.7d4c6988d7f7e1e4c8be.jpg",
-    "static/media/CV_Mihail.pdf": "//mprohorov.com/static/media/CV_Mihail.f45e3b79b156ce04d14e.pdf",
-    "index.html": "//mprohorov.com/index.html",
-    "main.376379ee.css.map": "//mprohorov.com/static/css/main.376379ee.css.map",
-    "main.b82615cb.js.map": "//mprohorov.com/static/js/main.b82615cb.js.map",
-    "787.a71561b8.chunk.js.map": "//mprohorov.com/static/js/787.a71561b8.chunk.js.map"
+    "main.css": "/mprohorov.github.io/static/css/main.29cfa7be.css",
+    "main.js": "/mprohorov.github.io/static/js/main.ba04158d.js",
+    "static/js/787.a71561b8.chunk.js": "/mprohorov.github.io/static/js/787.a71561b8.chunk.js",
+    "static/media/banner.jpg": "/mprohorov.github.io/static/media/banner.7d4c6988d7f7e1e4c8be.jpg",
+    "static/media/CV_Mihail.pdf": "/mprohorov.github.io/static/media/CV_Mihail.f45e3b79b156ce04d14e.pdf",
+    "index.html": "/mprohorov.github.io/index.html",
+    "main.29cfa7be.css.map": "/mprohorov.github.io/static/css/main.29cfa7be.css.map",
+    "main.ba04158d.js.map": "/mprohorov.github.io/static/js/main.ba04158d.js.map",
+    "787.a71561b8.chunk.js.map": "/mprohorov.github.io/static/js/787.a71561b8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.376379ee.css",
-    "static/js/main.b82615cb.js"
+    "static/css/main.29cfa7be.css",
+    "static/js/main.ba04158d.js"
   ]
 }
