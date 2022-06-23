@@ -1,6 +1,7 @@
 {
-  "name": "cv",
-  "homepage": "https://mprohorov.com/",
+  "name": "mprohorov.github.io",
+
+  "homepage": "https://mwxood.github.io/mprohorov.github.io/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
