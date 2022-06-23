@@ -1,0 +1,82 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.active-nav {
+  overflow: hidden;
+}
+
+.App-header {
+  padding: 35px 0;
+}
+
+.logo {
+  font-family: 'Lobster', cursive;
+  font-size: 36px;
+  text-decoration: none;
+  color: #34495e;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ecf0f1; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #2c3e50; 
+}
+
+.icon {
+  margin-right: 5px;
+  display: inline-block;
+}
+
+.about-content-heading {
+  color: #2c3e50;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  font-size: 26px;
+}
+
+.about-content-heading span {
+  border-bottom: 3px solid #2c3e50;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.fixed-width-text {
+  width: 50%;
+}
+
+a {
+  color: #2980b9;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.section {
+  margin-bottom: 100px;
+}
+
+@media (max-width: 992px) {
+  .section {
+    margin-bottom: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    margin-bottom: 50px;
+  }
+
+  .about-content-heading {
+    font-size: 22px;
+  }
+}
+
