@@ -1,0 +1,104 @@
+.experience-section {
+    background: #2c3e50;
+    padding: 60px 20px 0;
+}
+
+.equal {
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.job-title {
+    font-size: 20px;
+}
+
+.const, .equal {
+    color: #ecf0f1 !important;
+}
+
+.variable {
+    color: #8e44ad;
+}
+
+.brackets {
+    font-size: 20px;
+    color: #8e44ad;
+    margin-top: -1px;
+    margin-left: 5px;
+}
+
+.job-object {
+    font-size: 18px;
+    text-indent: 20px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.object-key {
+    color: #3498db;
+}
+
+.object-properties {
+    color: #e67e22;
+}
+
+.experience-heading {
+    color: #fff;
+}
+
+
+@media (max-width: 1200px) {
+    .constant-holder {
+        width: 90px;
+    }
+
+    .experience-holder {
+        max-width: 100%;
+        width: 100%;
+        justify-content: center !important;
+    }
+}
+
+@media (max-width: 685px) { 
+    .constant-holder {
+        width: 70px;
+    }
+    .job-title, .job-object, .equal, .brackets {
+        font-size: 16px;
+    }
+
+    .equal {
+        margin-left: 0;
+    }
+
+    .brackets {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 490px) { 
+    .constant-holder {
+        width: 65px;
+    }
+    .job-title, .job-object, .equal, .brackets {
+        font-size: 14px;
+    }
+
+    .job-object {
+        text-indent: 0;
+    }
+}
+
+@media (max-width: 420px) { 
+    .constant-holder {
+        width: 60px;
+    }
+    .job-title, .job-object, .equal, .brackets {
+        font-size: 12px;
+    }
+
+    .job-object {
+        text-indent: 0;
+    }
+}
