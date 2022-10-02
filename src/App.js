@@ -18,25 +18,14 @@ import {
 
 function App() {
   const dispatch = useDispatch()
-
   useEffect(() => {
-    let isMoutned = false
     data.then(resposne => {
-      console.log(resposne)
       resposne.map(post => {
-
-        if(isMoutned) {
-          dispatch(infoAction.addInfo(post))
-        }
+        dispatch(infoAction.addInfo(post))
     })
     }).catch((err) => {
       console.log(err.message)
     })
-
-    return() => {
-      isMoutned = true
-    }
-
   }, [])
 
   return (

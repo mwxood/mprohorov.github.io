@@ -10,7 +10,10 @@ import pdf from '../pdf/CV_Mihail.pdf'
 
 const HeaderContent = () => {
     const [imageSrc, setImageSrc] = useState(`https://robohash.org/3`)
-    const info = useSelector((state) => state.info)
+    const info = useSelector((state) => {
+        console.log(state.info)
+        return state.info
+    })
     const [loading, setLoading] = useState(false)
 
     useEffect(() => {
