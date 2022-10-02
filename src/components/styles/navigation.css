@@ -1,0 +1,123 @@
+.navigation-holder {
+    position: relative;
+}
+
+.navigation ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation ul li {
+    margin-right: 30px;
+}
+
+.navigation ul li:last-child {
+    margin-right: 0;
+}
+
+.navigation a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(191 190 203);
+    position: relative;
+}
+
+.navigation a:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 0;
+    height: 1px;
+    background: #61dafb;
+    display: block;
+    transition: all .3s;
+}
+
+.navigation a:hover:after {
+    width: 100%;
+}
+
+.nav-hamburger {
+    position: relative;
+    height: 15px;
+    width: 30px;
+    z-index: 4;
+    cursor: pointer;
+    display: none;
+}
+
+.nav-hamburger:after, .nav-hamburger:before {
+    content: '';
+    background: #fff;
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    left: 0;
+    top: 0;
+    transition: all .3s ease;
+}
+
+.nav-hamburger:after {
+    top: 10px;
+}
+
+.active-nav .nav-hamburger:after, .active-nav .nav-hamburger:before{
+    background: #fff;
+}
+
+.active-nav .nav-hamburger:before {
+    transform: rotate(45deg);
+}
+
+.active-nav .nav-hamburger:after {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+.active-nav .nav-holder {
+    clip-path:circle(100%);
+}
+
+@media (max-width: 680px) {
+    .navigation {
+        background: #282c34;
+        list-style: none;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        z-index: 3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all .3s ease;
+        clip-path:circle(0%);
+    }
+
+    .navigation ul {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .navigation ul li {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .navigation a {
+        font-size: 30px;
+    }
+
+    .nav-hamburger {
+        display: block;
+    }
+
+    .active-nav .navigation {
+        clip-path:circle(100%);
+    }
+}

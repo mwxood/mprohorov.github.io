@@ -1,0 +1,41 @@
+.skills-card {
+    background: #1c2029;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.skills-title {
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.icon-skills {
+    font-size: 80px;
+}
+
+.html {
+    color: #e34c26;
+}
+
+.css {
+    color: #264de4;
+}
+
+.js {
+    color: #f0db4f;
+}
+
+.react {
+    color: #61dafb;
+}
+
+.sass {
+    color: #cc6699;
+}
+
+.git {
+    color: #f34f29;
+}
+

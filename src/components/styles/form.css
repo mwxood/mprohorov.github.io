@@ -1,0 +1,20 @@
+.btn-primary {
+    background: #61dafb;
+    border: none
+}
+
+.custom-input {
+    background: none;
+    border: none ;
+    border-bottom: 1px solid #fff;
+    color: #fff !important;
+    border-radius: 0;
+    padding: 0 0 10px;
+}
+
+.custom-input:focus {
+    background: none;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+}
