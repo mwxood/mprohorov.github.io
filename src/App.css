@@ -85,3 +85,5 @@ img {
 textarea {
   resize: none;
 }
+
+.btn {text-transform: uppercase;}

@@ -141,7 +141,7 @@ const Contact = () => {
                                     <textarea onChange={onMessageValue} name="message" className="form-control custom-input shadow-none" value={message} />
                                 </div>
 
-                                <button type="submit" className="btn btn-primary full-width">submit</button>
+                                <button type="submit" className="btn btn-primary full-width">Send message</button>
                             </form>
                         </div>
                     </div>

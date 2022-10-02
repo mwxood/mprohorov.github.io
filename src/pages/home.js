@@ -22,14 +22,7 @@ const HeaderContent = () => {
     }, []);
 
     useEffect(() => {
-        let isMounted = false
-        if(isMounted) {
-            setImageSrc(`https://robohash.org/${Math.floor(Math.random() * 10) + 1}`)
-        }
-
-        return () => {
-            isMounted = true
-        }
+        setImageSrc(`https://robohash.org/${Math.floor(Math.random() * 10) + 1}`)
     }, [])
 
     return(
