@@ -7,7 +7,7 @@ body {
 
 html, body {
   height: 100%;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 .App, #root {
@@ -30,7 +30,7 @@ html, body {
 
 
 .border-r {
-  border-right: 1px solid #fff;
+  border-right: 1px solid #989898;
 }
 
 .opacity-05 {
@@ -46,6 +46,7 @@ html, body {
   height: 100vh;
   position: fixed;
   width: 100%;
+  z-index: -1;
 }
 
 .full-width {
