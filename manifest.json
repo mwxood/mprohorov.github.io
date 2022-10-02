@@ -1,6 +1,6 @@
 {
-  "short_name": "Front End Developer CV",
-  "name": "Front end developer with 7+ years experience in developing and testing multiple web-based applications, with passion in programing and design. I have strong skills in javascript, html , css.",
+  "short_name": "React App",
+  "name": "Create React App Sample",
   "icons": [
     {
       "src": "favicon.ico",
