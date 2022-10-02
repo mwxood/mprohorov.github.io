@@ -10,13 +10,12 @@ const Navigation = () => {
     }
 
     const onLinkHandler = () => {
-        setActive(false)
-        console.log(isActive)
+        setActive(true)
     }
 
     useEffect(() => {
         document.body.classList.remove('active-nav');
-        if (isActive) {
+        if (!isActive) {
             document.body.classList.add('active-nav');
         }
     })
