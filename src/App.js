@@ -22,7 +22,9 @@ function App() {
   useEffect(() => {
     let isMoutned = false
     data.then(resposne => {
+      console.log(resposne)
       resposne.map(post => {
+
         if(isMoutned) {
           dispatch(infoAction.addInfo(post))
         }

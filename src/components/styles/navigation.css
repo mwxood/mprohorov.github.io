@@ -51,7 +51,7 @@
 
 .nav-hamburger:after, .nav-hamburger:before {
     content: '';
-    background: #fff;
+    background: rgb(191 190 203);
     position: absolute;
     width: 30px;
     height: 4px;

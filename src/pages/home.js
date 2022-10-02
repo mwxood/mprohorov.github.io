@@ -32,8 +32,6 @@ const HeaderContent = () => {
         }
     }, [])
 
-    console.log(info)
-
     return(
 
         <div className='header-content d-flex align-items-center justify-content-center'>
