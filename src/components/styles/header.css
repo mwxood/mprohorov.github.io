@@ -76,22 +76,12 @@ body {
     position: relative;
     overflow: hidden;
     border-radius: 3px;
+    transition: all .3s;
 }
 
 .header-btn:hover {
     color: #fff;
-    border: 1px solid #61dafb;
-}
-
-.header-btn:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    transition: all 0.25s ease;
-    z-index: -1;
+    background: #61dafb;
 }
 
 .header-btn:hover:before {
