@@ -41,7 +41,6 @@ const Contact = () => {
         emailjs.sendForm('service_cx6i0wv', 'template_xgkxhjh', form.current, 'gLVhYE3uLW0l0Qq-y')
             .then((result) => {
                 console.log(result.text)
-                setCuccess('The message was send successfully. I will send answer to your message soon as possible.')
             }, (error) => {
                 console.log(error.text)
          })
