@@ -4,17 +4,33 @@
 }
 
 .custom-input {
-    background: none;
-    border: none ;
-    border-bottom: 1px solid #fff;
+    background: #1f2329;
+    border: #1f2329 ;
     color: #fff !important;
     border-radius: 0;
-    padding: 0 0 10px;
+    padding: 13px 10px;
+    margin-bottom: 10px;
 }
 
 .custom-input:focus {
-    background: none;
+    background: #1f2329;
     outline: none;
-    border: none;
-    border-bottom: 1px solid #fff;
+    border: #1f2329;
+}
+
+input:-internal-autofill-selected {
+    background-color: none;
+}
+
+.form-control:focus {
+    border-bottom-color: #61dafb;
+}
+
+.btn {
+    border-radius: 0;
+}
+
+.error-message {
+    color: #f8d7da;
+    margin-bottom: 10px;
 }

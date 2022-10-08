@@ -4,13 +4,14 @@ import { useSelector } from 'react-redux'
 import { Fade } from "react-awesome-reveal"
 import '../components/styles/resume.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHtml5, faCss3, faJs, faReact, faGit, faSass } from '@fortawesome/free-brands-svg-icons';
+import { faHtml5, faCss3, faJs, faReact, faGit, faSass } from '@fortawesome/free-brands-svg-icons'
 import Skills from '../components/UI/Skills'
 import Loader from '../components/UI/Loader'
+import { JobType, Flag, InfoType } from '../types/'
 
 const About = () => {
-    const info = useSelector((state) => state.info)
-    const [loading, setLoading] = useState(false)
+    const info = useSelector((state: InfoType) => state.info)
+    const [loading, setLoading] = useState<Flag>(false)
 
     useEffect(() => {
         setLoading(true);
@@ -25,7 +26,7 @@ const About = () => {
             return
         }
 
-        return info.items[3].jobPositions.map(job => {
+        return info.items[3].jobPositions.map((job: JobType) => {
             return (
                 <div key={job.id} className="resume-item">
                     <h4 className='mb-3'>{job.companyName}</h4>

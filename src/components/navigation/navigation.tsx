@@ -1,9 +1,11 @@
-import { useEffect, useState } from 'react';
-import '../styles/navigation.css';
-import { Link } from "react-router-dom";
+import { useEffect, useState } from 'react'
+import '../styles/navigation.css'
+import { Link } from "react-router-dom"
+import { Flag } from '../../types'
 
 const Navigation = () => {
-    const [isActive, setActive] = useState('false');
+    const [isActive, setActive] = useState<Flag>(false)
+
 
     const navHandler = () => {
         setActive(!isActive)

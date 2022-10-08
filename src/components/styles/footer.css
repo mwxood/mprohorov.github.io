@@ -12,3 +12,9 @@
     margin: auto;
     font-size: 12px;
 }
+
+@media(max-width: 680px) {
+    .footer {
+        right: -51%;
+    }
+}

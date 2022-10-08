@@ -14,13 +14,14 @@ import { data } from './data/data'
 import {
   BrowserRouter as Router, Route, Routes
 } from "react-router-dom";
+import { Response } from './types/'
 
 
 function App() {
   const dispatch = useDispatch()
   useEffect(() => {
-    data.then(resposne => {
-      resposne.map(post => {
+    data.then((response: any) => {
+      response.map((post: string[]) => {
         dispatch(infoAction.addInfo(post))
     })
     }).catch((err) => {
@@ -35,9 +36,9 @@ function App() {
         <Lines />
    
         <Routes>
-          <Route exact  path="/" element={<Home />} />
-          <Route exact  path="/about" element={<About />} />
-          <Route exact  path="/contact" element={<Contact />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound/>}/>
         </Routes>
 
