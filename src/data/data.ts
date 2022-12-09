@@ -4,16 +4,16 @@ const state = [
     userIntro: 'Hi, I am',
     userName: 'Mihail Prohorov',
     userRole: 'Front-end Developer',
-    userDescription: `I have 7+ years experience in developing and testing multiple web-based applications,
+    userDescription: `I have experience in developing and testing multiple web-based applications,
     with passion in programing and design. I have strong skills in javascript, html , css.`,
     linkedIn: 'https://www.linkedin.com/in/mihail-prohorov-76869041/',
-    github: 'https://github.com/mwxood'
+    github: 'https://github.com/mwxood',
   },
 
   {
     id: 1,
     aboutText: ` <p>Hello, my name is Mihail</p>
-    <p>I have 7+ years experience in developing and testing multiple web-based applications, with passion in programing and design. I have strong skills in javascript, html , css.</p>
+    <p>I have experience in developing and testing multiple web-based applications, with passion in programing and design. I have strong skills in javascript, html , css.</p>
     <p>I developing projects using PHP/MySql for backend and ReactJs for front-end.</p>
     <p>Please, feel free to check my github projects or download my CV.</p>`,
   },
@@ -23,66 +23,65 @@ const state = [
     education: {
       universityLocation: 'Plovdiv, Bulgaria',
       date: '2019-2021',
-      educationContent: 'Master degree software technologies, university of Plovdiv Paisii Hilendarski'
-    }
+      educationContent:
+        'Master degree software technologies, university of Plovdiv Paisii Hilendarski',
+    },
   },
 
   {
     jobPositions: [
-
       {
         id: 1,
-        companyName: "DevTeams",
+        companyName: 'DevTeam',
         jobDate: 'Sep 2022 - Present',
-        position: 'ReactJs Developer'
+        position: 'ReactJs Developer',
       },
 
       {
         id: 2,
-        companyName: "Green Leads Media Ltd",
+        companyName: 'Green Leads Media Ltd',
         jobDate: 'Jul 2021 - Sep 2022 ',
-        position: 'FrontEnd Developer'
+        position: 'FrontEnd Developer',
       },
 
       {
         id: 3,
-        companyName: "Virtual Congress Venue ",
-        jobDate: 'Oct 2020 - Aug 2022',
-        position: 'FullStack Developer'
-      },
-
-      {
-        id: 4,
-        companyName: "Grabo Media JSCo.",
-        jobDate: 'Feb 2018 - Nov 2018',
-        position: 'FrontEnd Developer'
+        companyName: 'Virtual Congress Venue ',
+        jobDate: 'Oct 2019 - Aug 2022',
+        position: 'FullStack Developer',
       },
 
       {
         id: 5,
-        companyName: "StreamingVideoProvider",
-        jobDate: 'Mar 2017 - 2018',
-        position: 'FrontEnd Developer'
+        companyName: 'TediSoft',
+        jobDate: 'Nov 2018 - Sept2019',
+        position: 'FrontEnd Developer',
       },
-      
+
+      {
+        id: 4,
+        companyName: 'Grabo Media JSCo.',
+        jobDate: 'Feb 2018 - Nov 2018',
+        position: 'FrontEnd Developer',
+      },
+
       {
         id: 6,
-        companyName: "Reward Gateway",
+        companyName: 'Reward Gateway',
         jobDate: 'front-end developer',
-        position: 'Jul 2015 - May 2016'
+        position: 'Jul 2015 - May 2016',
       },
 
       {
         id: 7,
-        companyName: "Webrix-studio.com",
+        companyName: 'Webrix-studio.com',
         jobDate: 'Reward Gateway',
-        position: 'Aug 2012 - Jul 2015'
+        position: 'Aug 2012 - Jul 2015',
       },
-
-    ]
-  }
-]
+    ],
+  },
+];
 
 export const data = new Promise((resolve, reject) => {
-  return resolve(state)
-})
+  return resolve(state);
+});
