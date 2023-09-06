@@ -117,11 +117,6 @@ const About = () => {
                           __html: aboutPage?.content?.html,
                         }}
                       />
-                      <div
-                        dangerouslySetInnerHTML={{
-                          __html: educationPage?.content?.html,
-                        }}
-                      />
                     </div>
                   </div>
                 </div>
@@ -141,14 +136,11 @@ const About = () => {
                     <div className="row">
                       <div className="col-md-6 mb-5">
                         <div className="resume-item">
-                          <h4 className="mb-3">Education</h4>
-                          <p>
-                            <em>
-                              {info.items[2].education.universityLocation}
-                            </em>
-                          </p>
-                          <p>{info.items[2].education.date}</p>
-                          <p>{info.items[2].education.educationContent}</p>
+                          <div
+                            dangerouslySetInnerHTML={{
+                              __html: educationPage?.content?.html,
+                            }}
+                          />
                         </div>
                       </div>
 
