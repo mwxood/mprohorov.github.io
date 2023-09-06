@@ -32,8 +32,14 @@ const state = [
     jobPositions: [
       {
         id: 1,
+        companyName: 'NexGen LLC',
+        jobDate: 'Jan 2023 - Present',
+        position: 'ReactJs Developer',
+      },
+      {
+        id: 1,
         companyName: 'DevTeam',
-        jobDate: 'Sep 2022 - Present',
+        jobDate: 'Sep 2022 - Dec 2022',
         position: 'ReactJs Developer',
       },
 
