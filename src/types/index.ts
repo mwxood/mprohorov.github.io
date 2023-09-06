@@ -1,37 +1,41 @@
-export type Flag = boolean
+export type Flag = boolean;
 
 export type PropsChildren = {
-    children: JSX.Element | JSX.Element[]
-}
+  children: JSX.Element | JSX.Element[];
+};
 
 export type JobType = {
-    id: string,
-    companyName: string,
-    jobDate: string,
-    position: string
-}
+  id: string;
+  title: string;
+  subtitle?: string;
+  slug?: string;
+  coverImage?: string;
+  content: {
+    html: string;
+  };
+};
 
-export type InfoType = { info: any }
-export type FormType = { current: any }
+export type InfoType = { info: any };
+export type FormType = { current: any };
 export type Response = {
-    response: any
-    post: string
-}
+  response: any;
+  post: string;
+};
 
 export type InfoReducer = {
-    state: {},
-    action: {}
-}
+  state: {};
+  action: {};
+};
 
 export type ValidateType = {
-    title: string,
-    email: string,
-    message: string,
-    errors?: {}
-}
+  title: string;
+  email: string;
+  message: string;
+  errors?: {};
+};
 
 export type Error = {
-    title: string,
-    email: string,
-    message: string,
-}
+  title: string;
+  email: string;
+  message: string;
+};

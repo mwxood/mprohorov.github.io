@@ -1,11 +1,6 @@
 const state = [
   {
     id: 0,
-    userIntro: 'Hi, I am',
-    userName: 'Mihail Prohorov',
-    userRole: 'Front-end Developer',
-    userDescription: `I have experience in developing and testing multiple web-based applications,
-    with passion in programing and design. I have strong skills in javascript, html , css.`,
     linkedIn: 'https://www.linkedin.com/in/mihail-prohorov-76869041/',
     github: 'https://github.com/mwxood',
   },

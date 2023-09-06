@@ -7,11 +7,23 @@ import { Fade } from 'react-awesome-reveal';
 import Loader from '../components/UI/Loader';
 import { InfoType } from '../types/';
 import SEO from '../components/SEO';
+import { graphcms, QUERY_PAGES } from '../Graphql/Queries';
 
 const HeaderContent = () => {
   const [imageSrc, setImageSrc] = useState(`https://robohash.org/3`);
   const info = useSelector((state: InfoType) => state.info);
   const [loading, setLoading] = useState(false);
+  const [homePage, setHomePage] = useState<any>([]);
+
+  useEffect(() => {
+    graphcms.request(QUERY_PAGES).then((res: any) => {
+      const homePage = res?.pages?.find((page: any) => page.slug === 'home');
+
+      if (homePage) {
+        setHomePage(homePage);
+      }
+    });
+  }, []);
 
   useEffect(() => {
     setLoading(true);
@@ -34,7 +46,7 @@ const HeaderContent = () => {
         {loading && <Loader />}
         {info.items.length && (
           <div className="text-center">
-            <div className="intro-text">Front-End developer</div>
+            <div className="intro-text">{homePage?.subtitle}</div>
             <Fade>
               <div className="user-info mb-4">
                 <div className="d-flex align-items-center justify-content-center mb-4">
@@ -45,15 +57,10 @@ const HeaderContent = () => {
 
                 <h1 className="mb-3">
                   <span className="d-flex justify-content-center text-center header-intro">
-                    <span className="text-intro">
-                      {info.items[0].userIntro}
-                    </span>
+                    <span className="text-intro">{'Hi, I am'}</span>
                     <Typewriter
                       options={{
-                        strings: [
-                          info.items[0].userName,
-                          info.items[0].userRole,
-                        ],
+                        strings: ['Mihail Prohorov', homePage?.subtitle],
                         autoStart: true,
                         delay: 100,
                         loop: true,
@@ -61,19 +68,23 @@ const HeaderContent = () => {
                     />
                   </span>
                 </h1>
-                <span className="intro-desc">
-                  {info.items[0].userDescription}
-                </span>
+                <div
+                  className="intro-desc"
+                  dangerouslySetInnerHTML={{ __html: homePage?.content?.html }}
+                />
               </div>
               <div className="d-flex justify-content-center">
                 <a
-                  href={info.items[0].linkedIn}
+                  href="https://www.linkedin.com/in/mihail-prohorov-76869041/"
                   className="header-btn list-btn"
                 >
                   <FontAwesomeIcon icon={faLinkedin} />
                 </a>
 
-                <a href={info.items[0].github} className="header-btn list-btn">
+                <a
+                  href="https://github.com/mwxood"
+                  className="header-btn list-btn"
+                >
                   <FontAwesomeIcon icon={faGithub} />
                 </a>
               </div>

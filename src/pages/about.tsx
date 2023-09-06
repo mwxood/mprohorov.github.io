@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import Img from '../images/img.jpg';
 import { useSelector } from 'react-redux';
 import { Fade } from 'react-awesome-reveal';
 import '../components/styles/resume.css';
@@ -16,10 +15,44 @@ import Skills from '../components/UI/Skills';
 import Loader from '../components/UI/Loader';
 import { JobType, Flag, InfoType } from '../types/';
 import SEO from '../components/SEO';
+import { graphcms, QUERY_PAGES } from '../Graphql/Queries';
 
 const About = () => {
   const info = useSelector((state: InfoType) => state.info);
   const [loading, setLoading] = useState<Flag>(false);
+  const [aboutPage, setAboutPage] = useState<any>([]);
+  const [educationPage, setEducationPage] = useState<any>([]);
+  const [otherPages, setOtherPages] = useState<any>([]);
+
+  useEffect(() => {
+    graphcms.request(QUERY_PAGES).then((res: any) => {
+      const aboutPage = res?.pages?.find(
+        (page: JobType) => page.slug === 'about'
+      );
+      const educationPage = res?.pages?.find(
+        (page: JobType) => page.slug === 'education'
+      );
+
+      const otherPages = res?.pages?.filter(
+        (page: JobType) =>
+          page.slug !== 'education' &&
+          page.slug !== 'home' &&
+          page.slug !== 'about'
+      );
+
+      if (aboutPage) {
+        setAboutPage(aboutPage);
+      }
+
+      if (educationPage) {
+        setEducationPage(educationPage);
+      }
+
+      if (otherPages) {
+        setOtherPages(otherPages);
+      }
+    });
+  }, []);
 
   useEffect(() => {
     setLoading(true);
@@ -33,12 +66,15 @@ const About = () => {
       return;
     }
 
-    return info.items[3].jobPositions.map((job: JobType) => {
+    return otherPages?.map((job: JobType) => {
       return (
         <div key={job.id} className="resume-item">
-          <h4 className="mb-3">{job.companyName}</h4>
-          <h5>{job.jobDate}</h5>
-          <p>{job.position}</p>
+          <h4 className="mb-3">{job?.title}</h4>
+          <div
+            dangerouslySetInnerHTML={{
+              __html: job?.content?.html,
+            }}
+          />
         </div>
       );
     });
@@ -59,9 +95,9 @@ const About = () => {
           <div>
             <div className="header-content d-flex align-items-center justify-content-center">
               <div className="text-center">
-                <div className="intro-text">About</div>
+                <div className="intro-text">{aboutPage?.subtitle}</div>
 
-                <h1 className="mb-3">About me</h1>
+                <h1 className="mb-3">{aboutPage?.title}</h1>
               </div>
             </div>
 
@@ -70,15 +106,22 @@ const About = () => {
                 <div className="text-section about section">
                   <div className="row">
                     <div className="col-md-4 mb-3">
-                      <img src={Img} alt="portfolio image" />
+                      <img
+                        src={aboutPage?.coverImage?.url}
+                        alt="portfolio image"
+                      />
                     </div>
                     <div className="col-md-7">
                       <div
                         dangerouslySetInnerHTML={{
-                          __html: info.items[1].aboutText,
+                          __html: aboutPage?.content?.html,
                         }}
-                      ></div>
-                      <p>{info.items[1].education}</p>
+                      />
+                      <div
+                        dangerouslySetInnerHTML={{
+                          __html: educationPage?.content?.html,
+                        }}
+                      />
                     </div>
                   </div>
                 </div>
