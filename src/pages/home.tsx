@@ -52,7 +52,12 @@ const HeaderContent = () => {
               <div className="user-info mb-4">
                 <div className="d-flex align-items-center justify-content-center mb-4">
                   <span className="user-img d-flex align-items-center justify-content-center">
-                    <img src={imageSrc} alt="image" />
+                    <img
+                      width="148"
+                      height="148"
+                      src={imageSrc}
+                      alt="Random robot"
+                    />
                   </span>
                 </div>
 
