@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Header from './components/header/header';
@@ -12,7 +12,6 @@ import { useDispatch } from 'react-redux';
 import { infoAction } from './reducers/info';
 import { data } from './data/data';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { Response } from './types/';
 import { HelmetProvider } from 'react-helmet-async';
 
 function App() {

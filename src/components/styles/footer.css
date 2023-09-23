@@ -1,20 +1,37 @@
 .footer {
-    position: fixed;
-    bottom: 50%;
-    transform: translateY(-50%);
-    right: -48%;
-    rotate: -90deg;
-    width: 100%;
+  position: fixed;
+  bottom: 50%;
+  transform: translateY(-50%);
+  right: -48%;
+  rotate: -90deg;
+  width: 100%;
 }
 
 .footer-inner {
-    width: 80%;
-    margin: auto;
-    font-size: 12px;
+  width: 80%;
+  margin: auto;
+  font-size: 12px;
 }
 
-@media(max-width: 680px) {
-    .footer {
-        right: -51%;
-    }
+.connection {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.online {
+  background: #2ecc71;
+}
+
+.offline {
+  background: #bdc3c7;
+}
+
+@media (max-width: 680px) {
+  .footer {
+    position: static;
+    transform: translateY(0);
+    rotate: 0deg;
+  }
 }

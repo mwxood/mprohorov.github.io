@@ -41,6 +41,7 @@ const HeaderContent = () => {
       <SEO
         title="Front-end developer from Plovdiv"
         description="Front end developer Plovdiv, Bulgaria"
+        url="https://mprohorov.com/"
       />
       <div className="header-content d-flex align-items-center justify-content-center">
         {loading && <Loader />}
@@ -75,6 +76,7 @@ const HeaderContent = () => {
               </div>
               <div className="d-flex justify-content-center">
                 <a
+                  aria-label="Read more about my linkedin profile"
                   href="https://www.linkedin.com/in/mihail-prohorov-76869041/"
                   className="header-btn list-btn"
                 >
@@ -82,6 +84,7 @@ const HeaderContent = () => {
                 </a>
 
                 <a
+                  aria-label="Read more about my github profile"
                   href="https://github.com/mwxood"
                   className="header-btn list-btn"
                 >

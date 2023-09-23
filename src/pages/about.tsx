@@ -87,6 +87,7 @@ const About = () => {
       <SEO
         title="Front-end developer about me"
         description="I developing projects using PHP/MySql for backend and ReactJs for front-end."
+        url="https://mprohorov.com/about"
       />
 
       <div className="inner-page">

@@ -59,6 +59,7 @@ const Contact = () => {
       <SEO
         title="Front-end developer contact"
         description="Contact with front end developer from plovidv"
+        url="https://mprohorov.com/contact"
       />
 
       <div className="inner-page">
