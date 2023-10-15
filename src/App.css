@@ -1,3 +1,6 @@
+@import '@fontsource/roboto';
+@import '@fontsource/roboto/900.css';
+
 body {
   background-color: #282c34;
   color: rgb(191 190 203);
@@ -5,12 +8,14 @@ body {
   height: 100%;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   overflow-x: hidden;
 }
 
-.App, #root {
+.App,
+#root {
   height: 100%;
 }
 
@@ -28,7 +33,6 @@ html, body {
   color: #61dafb;
 }
 
-
 .border-r {
   border-right: 1px solid #989898;
 }
@@ -37,7 +41,8 @@ html, body {
   opacity: 0.1;
 }
 
-.button, .text-section {
+.button,
+.text-section {
   position: relative;
   z-index: 3;
 }
@@ -76,15 +81,25 @@ img {
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; 
+  background: #f1f1f1;
 }
- 
+
 ::-webkit-scrollbar-thumb {
-  background: #282c34; 
+  background: #282c34;
 }
 textarea {
   resize: none;
 }
 
-.btn {text-transform: uppercase;}
+.btn {
+  text-transform: uppercase;
+}
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
