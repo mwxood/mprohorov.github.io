@@ -16,20 +16,24 @@ const HeaderContent = () => {
   const [homePage, setHomePage] = useState<any>([]);
 
   useEffect(() => {
-    graphcms.request(QUERY_PAGES).then((res: any) => {
-      const homePage = res?.pages?.find((page: any) => page.slug === 'home');
+    graphcms
+      .request(QUERY_PAGES)
+      .then((res: any) => {
+        const homePage = res?.pages?.find((page: any) => page.slug === 'home');
 
-      if (homePage) {
-        setHomePage(homePage);
-      }
-    });
+        if (homePage) {
+          setHomePage(homePage);
+        }
+      })
+      .finally(() => {
+        setTimeout(() => {
+          setLoading(false);
+        }, 500);
+      });
   }, []);
 
   useEffect(() => {
     setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-    }, 500);
   }, []);
 
   useEffect(() => {

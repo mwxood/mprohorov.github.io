@@ -25,40 +25,44 @@ const About = () => {
   const [otherPages, setOtherPages] = useState<any>([]);
 
   useEffect(() => {
-    graphcms.request(QUERY_PAGES).then((res: any) => {
-      const aboutPage = res?.pages?.find(
-        (page: JobType) => page.slug === 'about'
-      );
-      const educationPage = res?.pages?.find(
-        (page: JobType) => page.slug === 'education'
-      );
+    graphcms
+      .request(QUERY_PAGES)
+      .then((res: any) => {
+        const aboutPage = res?.pages?.find(
+          (page: JobType) => page.slug === 'about'
+        );
+        const educationPage = res?.pages?.find(
+          (page: JobType) => page.slug === 'education'
+        );
 
-      const otherPages = res?.pages?.filter(
-        (page: JobType) =>
-          page.slug !== 'education' &&
-          page.slug !== 'home' &&
-          page.slug !== 'about'
-      );
+        const otherPages = res?.pages?.filter(
+          (page: JobType) =>
+            page.slug !== 'education' &&
+            page.slug !== 'home' &&
+            page.slug !== 'about'
+        );
 
-      if (aboutPage) {
-        setAboutPage(aboutPage);
-      }
+        if (aboutPage) {
+          setAboutPage(aboutPage);
+        }
 
-      if (educationPage) {
-        setEducationPage(educationPage);
-      }
+        if (educationPage) {
+          setEducationPage(educationPage);
+        }
 
-      if (otherPages) {
-        setOtherPages(otherPages);
-      }
-    });
+        if (otherPages) {
+          setOtherPages(otherPages);
+        }
+      })
+      .finally(() => {
+        setTimeout(() => {
+          setLoading(false);
+        }, 500);
+      });
   }, []);
 
   useEffect(() => {
     setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-    }, 500);
   }, []);
 
   const jobs = () => {
